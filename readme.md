@@ -161,13 +161,13 @@ WHERE (@cie_to_check IS NULL OR al.airline_name = @cie_to_check)
 GROUP BY al.airline_name
 ;
 ```
-|airline_name|total_num_of_flights|total_pax|average_revenue_per_flight|global_avg_revenue_per_passenger|average_of_delay_in_min|on_time_rate|Cancel_rate|
+|airline_name|total_num_of_flights|total_revenue|average_revenue_per_flight|global_avg_revenue_per_passenger|average_of_delay_in_min|on_time_rate|Cancel_rate|
 |---|---|---|---|---|---|---|---|
-|Air France|2556|552546|342816837.43|134122.39|620.43|37|70.85|4.34|
-|All Nippon Airways|2503|533120|335544340.64|134056.87|629.40|36|70.00|4.16|
-|American Airlines|2505|529720|332665821.26|132800.73|628.00|38|70.02|4.75|
-|British Airways|2354|509437|319277020.76|135631.70|626.73|41|67.59|4.55|
-|Delta Air Lines|2475|530710|341939728.41|138157.47|644.31|35|70.95|4.44|
+|Air France|2556|342816837.43|134122.39|620.43|37|70.85|4.34|
+|All Nippon Airways|2503|335544340.64|134056.87|629.40|36|70.00|4.16|
+|American Airlines|2505|332665821.26|132800.73|628.00|38|70.02|4.75|
+|British Airways|2354|319277020.76|135631.70|626.73|41|67.59|4.55|
+|Delta Air Lines|2475|341939728.41|138157.47|644.31|35|70.95|4.44|
 |
 
 🔍 Insights
