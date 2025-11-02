@@ -149,7 +149,7 @@ SET @cie_to_check = NULL;
 SELECT
     al.airline_name,
     COUNT(*) AS total_num_of_flights,
-    ROUND(SUM(f.revenue),2) AS total_pax,
+    ROUND(SUM(f.revenue),2) AS total_revenue,
     ROUND(AVG(f.revenue),2) AS average_revenue_per_flight,
     ROUND(SUM(f.revenue)/SUM(f.passenger_count),2) AS global_avg_revenue_per_passenger,
     AVG(f.delay_minutes) AS average_of_delay_in_min,
