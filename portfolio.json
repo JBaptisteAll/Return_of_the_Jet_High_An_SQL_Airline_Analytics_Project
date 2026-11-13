@@ -1,0 +1,29 @@
+{
+  "id": "p_jet_high",
+  "order": 120,
+  "label": "JET_HIGH",
+  "kanji": "析",
+  "year": "2025",
+  "title_fr": "Return of the Jet High",
+  "title_en": "Return of the Jet High",
+  "summary_fr": "Analytique SQL sur la base aérienne de l'acte 1 : revenus, retards, routes, utilisation de la flotte et comportement des passagers, avec des vues prêtes pour la BI.",
+  "summary_en": "SQL analytics on the airline database from Act 1: revenue, delays, routes, fleet utilization and passenger behavior, with BI-ready views.",
+  "body_fr": "Acte 2 de la saga Airline. Après avoir construit la base, il fallait la faire parler.\n\nJ'ai écrit des requêtes et des vues SQL Server qui répondent à des questions métier : quelles routes sont les plus rentables, quels aéroports sont les plus ponctuels, quels besoins en carburant selon les performances des avions, comment segmenter les passagers. Le tout s'appuie sur **25 001 vols** et **100 007 passagers**.\n\nLes vues sont pensées pour être branchées directement sur un outil de BI, sans retraitement.",
+  "body_en": "Act 2 of the Airline saga. Once the database was built, it had to tell a story.\n\nI wrote SQL Server queries and views answering business questions: which routes are the most profitable, which airports are the most punctual, what the fuel needs are given aircraft performance, how to segment passengers. Everything relies on **25,001 flights** and **100,007 passengers**.\n\nThe views are designed to plug straight into a BI tool, with no further processing.",
+  "metrics": [
+    {
+      "label": "vols",
+      "value": "25 001"
+    },
+    {
+      "label": "passagers",
+      "value": "100 007"
+    },
+    {
+      "label": "moteur",
+      "value": "SQL Server"
+    }
+  ],
+  "mermaid": "flowchart LR\n  DW[Base aérienne] --> Q[Requêtes SQL]\n  Q --> V[Vues analytiques]\n  V --> K[KPIs métier]\n  V --> BI[Outil de BI]",
+  "bot_description": "Acte 2 de la saga Airline : requêtes et vues SQL Server sur la base aérienne (rentabilité des routes, ponctualité, flotte, segmentation des passagers), prêtes à être branchées sur un outil de BI."
+}
